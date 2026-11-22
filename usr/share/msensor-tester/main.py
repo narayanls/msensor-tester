@@ -113,6 +113,7 @@ class MSensorApp(Adw.Application):
             ("preferences", self._on_preferences, ["<primary>comma"]),
             ("about", self._on_about, []),
             ("diagnostics", self._on_diagnostics, []),
+            ("check-updates", self._on_check_updates, []),
         ):
             action = Gio.SimpleAction.new(name, None)
             action.connect("activate", callback)
@@ -125,7 +126,18 @@ class MSensorApp(Adw.Application):
 
         if self.window is None:
             self.window = MainWindow(self, self.settings)
+            self.window.updates.schedule_auto_check()
         self.window.present()
+
+    def do_shutdown(self):
+        # Depois de "Reiniciar agora" no atualizador, abre a versão nova.
+        if self.window is not None:
+            self.window.updates.relaunch_if_requested()
+        Adw.Application.do_shutdown(self)
+
+    def _on_check_updates(self, *_args):
+        if self.window:
+            self.window.updates.check(manual=True)
 
     def _on_preferences(self, *_args):
         from ui.dialogs import show_preferences

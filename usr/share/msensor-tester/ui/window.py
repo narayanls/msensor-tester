@@ -18,6 +18,7 @@ from core.i18n import _  # noqa: E402
 from .dialogs import show_busy_dialog, show_permission_dialog  # noqa: E402
 from .polling_page import PollingPage  # noqa: E402
 from .sensor_page import SensorPage  # noqa: E402
+from .updates import UpdateController  # noqa: E402
 
 
 class MainWindow(Adw.ApplicationWindow):
@@ -31,6 +32,7 @@ class MainWindow(Adw.ApplicationWindow):
         self.detector = None
         self._detector_timer = None
         self._updating_devices = False
+        self.updates = UpdateController(self)
 
         # ----------------------------------------------------------- header
         header = Adw.HeaderBar()
@@ -62,6 +64,7 @@ class MainWindow(Adw.ApplicationWindow):
         menu = Gio.Menu()
         menu.append(_("Preferences"), "app.preferences")
         menu.append(_("Diagnostics…"), "app.diagnostics")
+        menu.append(_("Check for updates"), "app.check-updates")
         menu.append(_("About MSensor Tester"), "app.about")
         menu_button = Gtk.MenuButton(icon_name="open-menu-symbolic", menu_model=menu)
         menu_button.set_tooltip_text(_("Main menu"))

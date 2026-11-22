@@ -135,27 +135,6 @@ The log goes to the terminal and to `~/.cache/msensor-tester/debug.log`. Every s
 - **The F1, F3 and Esc keys** only work while the app window has focus.
 - **In the polling rate test**, prefer moving the mouse in circles in the middle of the screen: hitting a corner may open the GNOME overview (hot corner). The measurement continues, but the window goes to the background.
 
-## Translations
-
-The interface uses gettext. Strings are written in English in the code, and translations live in `po/`:
-
-- `po/msensor-tester.pot`: template with every string, generated from the code;
-- `po/pt_BR.po`: Brazilian Portuguese;
-- `po/LINGUAS`: list of translated languages.
-
-The language follows the system (`LANGUAGE`, `LC_ALL`, `LC_MESSAGES` or `LANG`): any Portuguese variant (pt-BR, pt-PT…) uses the pt-BR translation, and every other language uses English. **Preferences → Language** can force either one.
-
-After changing strings in the code:
-
-```sh
-make update-po  # refreshes the .pot and merges new strings into pt_BR.po
-# translate the empty or "fuzzy" entries in po/pt_BR.po
-make stats      # shows how many strings are translated
-make            # compiles to usr/share/locale/pt_BR/LC_MESSAGES/msensor-tester.mo
-```
-
-`makepkg` compiles the `.po` files by itself; `.mo` files are not committed. To add another language, create it with `msginit -i po/msensor-tester.pot -l <code> -o po/<code>.po`, add the code to `po/LINGUAS`, and update the language choice in `core/i18n.py`.
-
 ## Credits
 
 Inspired by [MouseTester](https://github.com/microe1/MouseTester) by microe1 (MIT). MSensor Tester is an independent reimplementation for Linux; no code from the original was copied.

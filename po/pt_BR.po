@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: msensor-tester 1.1.1\n"
 "Report-Msgid-Bugs-To: https://github.com/narayanls/msensor-tester/issues\n"
-"POT-Creation-Date: 2026-11-21 21:07-0300\n"
+"POT-Creation-Date: 2026-11-21 21:25-0300\n"
 "PO-Revision-Date: 2026-11-21 21:10-0300\n"
 "Last-Translator: narayanls\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -294,9 +294,60 @@ msgstr ""
 msgid "Move the mouse now"
 msgstr "Mova o mouse agora"
 
+#: usr/share/msensor-tester/core/updater.py:122
+msgid "No release has been published yet."
+msgstr "Nenhum release foi publicado ainda."
+
+#: usr/share/msensor-tester/core/updater.py:124
+msgid "GitHub is limiting requests right now. Try again later."
+msgstr "O GitHub está limitando as consultas agora. Tente mais tarde."
+
+#: usr/share/msensor-tester/core/updater.py:125
+#, python-brace-format
+msgid "Could not check for updates (HTTP {code})."
+msgstr "Não foi possível verificar atualizações (HTTP {code})."
+
+#: usr/share/msensor-tester/core/updater.py:129
+msgid "Could not check for updates. Check your internet connection."
+msgstr ""
+"Não foi possível verificar atualizações. Confira sua conexão com a internet."
+
+#: usr/share/msensor-tester/core/updater.py:151
+msgid "The latest release has no version number."
+msgstr "O último release não tem número de versão."
+
+#: usr/share/msensor-tester/core/updater.py:177
+msgid "This release has no package to install."
+msgstr "Este release não tem pacote para instalar."
+
+#: usr/share/msensor-tester/core/updater.py:207
+msgid "The download failed. Check your internet connection."
+msgstr "O download falhou. Confira sua conexão com a internet."
+
+#: usr/share/msensor-tester/core/updater.py:211
+msgid "The download is incomplete. Try again."
+msgstr "O download ficou incompleto. Tente de novo."
+
+#: usr/share/msensor-tester/core/updater.py:214
+msgid "The downloaded file is corrupted (checksum mismatch). Try again."
+msgstr ""
+"O arquivo baixado está corrompido (checksum não confere). Tente de novo."
+
+#: usr/share/msensor-tester/core/updater.py:223
+msgid "Automatic installation requires pacman and pkexec."
+msgstr "A instalação automática precisa do pacman e do pkexec."
+
+#: usr/share/msensor-tester/core/updater.py:233
+msgid "Authorization was not granted."
+msgstr "A autorização não foi concedida."
+
+#: usr/share/msensor-tester/core/updater.py:236
+msgid "pacman could not install the update:"
+msgstr "O pacman não conseguiu instalar a atualização:"
+
 #: usr/share/msensor-tester/ui/diagnostics_window.py:21
 #: usr/share/msensor-tester/ui/dialogs.py:121
-#: usr/share/msensor-tester/ui/window.py:319
+#: usr/share/msensor-tester/ui/window.py:322
 msgid "Diagnostics"
 msgstr "Diagnóstico"
 
@@ -431,7 +482,7 @@ msgid "Virtual device selected. Start the test again."
 msgstr "Dispositivo virtual selecionado. Inicie o teste de novo."
 
 #: usr/share/msensor-tester/ui/dialogs.py:146
-#: usr/share/msensor-tester/ui/window.py:63
+#: usr/share/msensor-tester/ui/window.py:65
 msgid "Preferences"
 msgstr "Preferências"
 
@@ -992,103 +1043,223 @@ msgstr "Não foi possível abrir o arquivo: {error}"
 msgid "File loaded"
 msgstr "Arquivo carregado"
 
-#: usr/share/msensor-tester/ui/window.py:45
+#: usr/share/msensor-tester/ui/updates.py:39
+msgid "Checking for updates…"
+msgstr "Verificando atualizações…"
+
+#: usr/share/msensor-tester/ui/updates.py:68
+#, python-brace-format
+msgid "You have the latest version ({version})."
+msgstr "Você já tem a versão mais recente ({version})."
+
+#: usr/share/msensor-tester/ui/updates.py:97
+#, python-brace-format
+msgid "Version {new} is available. You have version {current}."
+msgstr "A versão {new} está disponível. Você tem a versão {current}."
+
+#: usr/share/msensor-tester/ui/updates.py:102
+#: usr/share/msensor-tester/ui/updates.py:127
+#: usr/share/msensor-tester/ui/updates.py:263
+msgid "View on GitHub"
+msgstr "Ver no GitHub"
+
+#: usr/share/msensor-tester/ui/updates.py:111
+#, python-brace-format
+msgid ""
+"{app} is running from the source code, so it can't update itself. Download "
+"the new version from GitHub."
+msgstr ""
+"O {app} está rodando a partir do código-fonte, então não pode se atualizar "
+"sozinho. Baixe a versão nova no GitHub."
+
+#: usr/share/msensor-tester/ui/updates.py:113
+msgid ""
+"Automatic installation requires pacman (Arch Linux). Download the new "
+"version from GitHub."
+msgstr ""
+"A instalação automática precisa do pacman (Arch Linux). Baixe a versão nova "
+"no GitHub."
+
+#: usr/share/msensor-tester/ui/updates.py:115
+msgid ""
+"Automatic installation requires pkexec (polkit). Download the new version "
+"from GitHub."
+msgstr ""
+"A instalação automática precisa do pkexec (polkit). Baixe a versão nova no "
+"GitHub."
+
+#: usr/share/msensor-tester/ui/updates.py:117
+msgid "This release has no package to install. Download it from GitHub."
+msgstr "Este release não tem pacote para instalar. Baixe-o no GitHub."
+
+#: usr/share/msensor-tester/ui/updates.py:123
+msgid "Update available"
+msgstr "Atualização disponível"
+
+#: usr/share/msensor-tester/ui/updates.py:126
+#: usr/share/msensor-tester/ui/updates.py:273
+msgid "Later"
+msgstr "Depois"
+
+#: usr/share/msensor-tester/ui/updates.py:129
+msgid "Update"
+msgstr "Atualizar"
+
+#: usr/share/msensor-tester/ui/updates.py:145
+msgid "What's new"
+msgstr "Novidades"
+
+#: usr/share/msensor-tester/ui/updates.py:177
+#, python-brace-format
+msgid "Updating {app}"
+msgstr "Atualizando o {app}"
+
+#: usr/share/msensor-tester/ui/updates.py:178
+#, python-brace-format
+msgid "Downloading version {version}…"
+msgstr "Baixando a versão {version}…"
+
+#: usr/share/msensor-tester/ui/updates.py:180
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: usr/share/msensor-tester/ui/updates.py:206
+#, python-brace-format
+msgid "Unexpected error: {error}"
+msgstr "Erro inesperado: {error}"
+
+#: usr/share/msensor-tester/ui/updates.py:222
+msgid "Installing… Enter your password if the system asks for it."
+msgstr "Instalando… Digite sua senha se o sistema pedir."
+
+#: usr/share/msensor-tester/ui/updates.py:258
+msgid "Update cancelled"
+msgstr "Atualização cancelada"
+
+#: usr/share/msensor-tester/ui/updates.py:261
+msgid "Update failed"
+msgstr "A atualização falhou"
+
+#: usr/share/msensor-tester/ui/updates.py:262
+msgid "Close"
+msgstr "Fechar"
+
+#: usr/share/msensor-tester/ui/updates.py:270
+msgid "Update installed"
+msgstr "Atualização instalada"
+
+#: usr/share/msensor-tester/ui/updates.py:271
+#, python-brace-format
+msgid "{app} {version} was installed. Restart the app to use the new version."
+msgstr ""
+"O {app} {version} foi instalado. Reinicie o aplicativo para usar a versão "
+"nova."
+
+#: usr/share/msensor-tester/ui/updates.py:274
+msgid "Restart now"
+msgstr "Reiniciar agora"
+
+#: usr/share/msensor-tester/ui/window.py:47
 msgid "Mouse to test"
 msgstr "Mouse a testar"
 
-#: usr/share/msensor-tester/ui/window.py:52
+#: usr/share/msensor-tester/ui/window.py:54
 msgid "Detect: move the mouse you want to test"
 msgstr "Detectar: mova o mouse que deseja testar"
 
-#: usr/share/msensor-tester/ui/window.py:57
+#: usr/share/msensor-tester/ui/window.py:59
 msgid "Refresh the list of mice"
 msgstr "Atualizar a lista de mouses"
 
-#: usr/share/msensor-tester/ui/window.py:64
+#: usr/share/msensor-tester/ui/window.py:66
 msgid "Diagnostics…"
 msgstr "Diagnóstico…"
 
-#: usr/share/msensor-tester/ui/window.py:65
+#: usr/share/msensor-tester/ui/window.py:67
+msgid "Check for updates"
+msgstr "Verificar atualizações"
+
+#: usr/share/msensor-tester/ui/window.py:68
 msgid "About MSensor Tester"
 msgstr "Sobre o MSensor Tester"
 
-#: usr/share/msensor-tester/ui/window.py:67
+#: usr/share/msensor-tester/ui/window.py:70
 msgid "Main menu"
 msgstr "Menu principal"
 
-#: usr/share/msensor-tester/ui/window.py:72
+#: usr/share/msensor-tester/ui/window.py:75
 msgid "No permission to read the mice"
 msgstr "Sem permissão para ler os mouses"
 
-#: usr/share/msensor-tester/ui/window.py:73
+#: usr/share/msensor-tester/ui/window.py:76
 msgid "How to fix"
 msgstr "Como resolver"
 
-#: usr/share/msensor-tester/ui/window.py:81
+#: usr/share/msensor-tester/ui/window.py:84
 msgid "Sensor"
 msgstr "Sensor"
 
-#: usr/share/msensor-tester/ui/window.py:84
+#: usr/share/msensor-tester/ui/window.py:87
 msgid "Polling rate"
 msgstr "Polling rate"
 
-#: usr/share/msensor-tester/ui/window.py:146
+#: usr/share/msensor-tester/ui/window.py:149
 msgid "no permission"
 msgstr "sem permissão"
 
-#: usr/share/msensor-tester/ui/window.py:151
+#: usr/share/msensor-tester/ui/window.py:154
 msgid "in exclusive use"
 msgstr "em uso exclusivo"
 
-#: usr/share/msensor-tester/ui/window.py:153
+#: usr/share/msensor-tester/ui/window.py:156
 msgid "virtual"
 msgstr "virtual"
 
-#: usr/share/msensor-tester/ui/window.py:174
+#: usr/share/msensor-tester/ui/window.py:177
 msgid "No mouse found"
 msgstr "Nenhum mouse encontrado"
 
-#: usr/share/msensor-tester/ui/window.py:212
+#: usr/share/msensor-tester/ui/window.py:215
 msgid "Move the mouse you want to test…"
 msgstr "Mova o mouse que deseja testar…"
 
-#: usr/share/msensor-tester/ui/window.py:226
+#: usr/share/msensor-tester/ui/window.py:229
 #, python-brace-format
 msgid "Selected: {name}"
 msgstr "Selecionado: {name}"
 
-#: usr/share/msensor-tester/ui/window.py:228
+#: usr/share/msensor-tester/ui/window.py:231
 msgid "No movement detected."
 msgstr "Nenhum movimento detectado."
 
-#: usr/share/msensor-tester/ui/window.py:247
+#: usr/share/msensor-tester/ui/window.py:250
 msgid "No mouse selected."
 msgstr "Nenhum mouse selecionado."
 
-#: usr/share/msensor-tester/ui/window.py:265
+#: usr/share/msensor-tester/ui/window.py:268
 #, python-brace-format
 msgid "Could not open the mouse: {error}"
 msgstr "Não foi possível abrir o mouse: {error}"
 
-#: usr/share/msensor-tester/ui/window.py:273
+#: usr/share/msensor-tester/ui/window.py:276
 msgid ""
 "another program already has exclusive access to it (input-remapper, keyd, "
 "kanata…)"
 msgstr ""
 "outro programa já tem acesso exclusivo a ele (input-remapper, keyd, kanata…)"
 
-#: usr/share/msensor-tester/ui/window.py:279
+#: usr/share/msensor-tester/ui/window.py:282
 #, python-brace-format
 msgid ""
 "Could not lock the cursor: {reason}. The test continues without the lock."
 msgstr ""
 "Não foi possível travar o cursor: {reason}. O teste continua sem a trava."
 
-#: usr/share/msensor-tester/ui/window.py:315
+#: usr/share/msensor-tester/ui/window.py:318
 #, python-brace-format
 msgid "Nothing received from “{name}”. Is this the mouse you are moving?"
 msgstr "Nada recebido de “{name}”. É este o mouse que você está movendo?"
 
-#: usr/share/msensor-tester/ui/window.py:358
+#: usr/share/msensor-tester/ui/window.py:361
 msgid "Test stopped because the window lost focus."
 msgstr "Teste interrompido porque a janela perdeu o foco."

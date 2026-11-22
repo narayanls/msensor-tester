@@ -6,7 +6,7 @@ gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Adw, Gtk  # noqa: E402
 
-from core import APP_ID, APP_NAME, APP_VERSION, APP_WEBSITE, UDEV_RULE_NAME  # noqa: E402
+from core import APP_ID, APP_NAME, APP_WEBSITE, UDEV_RULE_NAME, updater  # noqa: E402
 from core.devices import bundled_udev_rule, udev_rule_installed  # noqa: E402
 from core.i18n import _  # noqa: E402
 
@@ -192,7 +192,7 @@ def show_about(win):
     kwargs = dict(
         application_name=APP_NAME,
         application_icon=APP_ID,
-        version=APP_VERSION,
+        version=updater.display_version(updater.installed_version()),
         developer_name="narayanls",
         license_type=Gtk.License.GPL_3_0,
         website=APP_WEBSITE,

@@ -1,6 +1,6 @@
 # Maintainer: narayanls
 pkgname=msensor-tester
-pkgver=1.0.0
+pkgver=1.0.1
 pkgrel=1
 pkgdesc="Teste de rastreio do sensor e de polling rate de mouses (inspirado no MouseTester)"
 arch=('any')
