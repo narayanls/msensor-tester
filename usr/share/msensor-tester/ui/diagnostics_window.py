@@ -18,7 +18,7 @@ LISTEN_SECONDS = 5
 
 class DiagnosticsWindow(Adw.Window):
     def __init__(self, parent):
-        super().__init__(transient_for=parent, title=f"{APP_NAME} — {_('Diagnostics')}")
+        super().__init__(transient_for=parent, title=f"{APP_NAME} — " + _("Diagnostics"))
         self.set_default_size(860, 700)
         self.parent_win = parent
         self._running = False
@@ -73,7 +73,7 @@ class DiagnosticsWindow(Adw.Window):
                 )
             except Exception as exc:  # noqa: BLE001 - o relatório nunca deve derrubar o app
                 debuglog.log.exception("diagnóstico falhou")
-                report = f"{_('The diagnostic failed')}: {exc!r}"
+                report = _("The diagnostic failed") + f": {exc!r}"
             GLib.idle_add(self._done, report)
 
         threading.Thread(target=worker, daemon=True).start()

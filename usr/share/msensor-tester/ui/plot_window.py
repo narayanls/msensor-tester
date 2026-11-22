@@ -63,7 +63,7 @@ def smooth(x, y, width=SMOOTH_MS):
 
 class PlotWindow(Adw.Window):
     def __init__(self, parent, log, initial="xycount"):
-        super().__init__(transient_for=parent, title=f"{APP_NAME} — {_('Plots')}")
+        super().__init__(transient_for=parent, title=f"{APP_NAME} — " + _("Plots"))
         self.set_default_size(1040, 760)
         from matplotlib.backends.backend_gtk4agg import FigureCanvasGTK4Agg as FigureCanvas
         from matplotlib.backends.backend_gtk4 import NavigationToolbar2GTK4 as NavToolbar

@@ -281,13 +281,14 @@ def build_report(listen_seconds=5, progress=None, selected_path=None):
     add("## " + _("System"))
     user = pwd.getpwuid(os.getuid()).pw_name
     groups = sorted({grp.getgrgid(g).gr_name for g in os.getgroups() if _safe_group(g)})
-    add(f"  {_('Distribution')}: {_os_release()}")
+    add("  " + _("Distribution") + f": {_os_release()}")
     add(f"  Kernel: {platform.release()}")
-    add(f"  {_('Session')}: XDG_SESSION_TYPE={os.environ.get('XDG_SESSION_TYPE', '?')} "
+    add("  " + _("Session") + f": XDG_SESSION_TYPE={os.environ.get('XDG_SESSION_TYPE', '?')} "
         f"XDG_CURRENT_DESKTOP={os.environ.get('XDG_CURRENT_DESKTOP', '?')}")
     add(f"  Python: {sys.version.split()[0]}")
-    add(f"  {_('User')}: {user} (uid {os.getuid()}) — {_('groups')}: {', '.join(groups) or '-'}")
-    add(f"  {_('udev rule installed')}: {_('yes') if udev_rule_installed() else _('NO')}")
+    add("  " + _("User") + f": {user} (uid {os.getuid()}) — "
+        + _("groups") + f": {', '.join(groups) or '-'}")
+    add("  " + _("udev rule installed") + ": " + (_("yes") if udev_rule_installed() else _("NO")))
     add("")
 
     # -------------------------------------------------------------- dispositivos
@@ -305,7 +306,7 @@ def build_report(listen_seconds=5, progress=None, selected_path=None):
             kind.append(_("absolute (touchpad/tablet)"))
         kind = ", ".join(kind) or _("other")
         add(f"  event{d['n']:<3} {d['name']}")
-        add(f"           {_('type')}: {kind} | bus {d['bus']} {d['vid']}:{d['pid']} | {d['phys'] or '-'}")
+        add("           " + _("type") + f": {kind} | bus {d['bus']} {d['vid']}:{d['pid']} | {d['phys'] or '-'}")
         caps = []
         if d["rel_xy"]:
             caps.append("REL_X/Y")
@@ -314,18 +315,18 @@ def build_report(listen_seconds=5, progress=None, selected_path=None):
         if d["btn_left"]:
             caps.append("BTN_LEFT")
         caps.append(_("{n} keys/buttons").format(n=d["keys"]))
-        add(f"           {_('capabilities')}: {' '.join(caps)}")
+        add("           " + _("capabilities") + ": " + " ".join(caps))
         perm = _("readable") if d["readable"] else _("NOT readable")
-        add(f"           {_('permission')}: {d['mode']} {d['owner']}:{d['group']} → {perm}")
+        add("           " + _("permission") + f": {d['mode']} {d['owner']}:{d['group']} → {perm}")
         if d["path"] in mouse_paths:
             if d["udev"] is None:
-                add(f"           udev: {_('database not available')}")
+                add("           udev: " + _("database not available"))
             else:
                 idm = d["udev"].get("ID_INPUT_MOUSE", "-")
                 idk = d["udev"].get("ID_INPUT_KEYBOARD", "-")
                 uacc = "uaccess" in d["tags"]
                 add(f"           udev: ID_INPUT_MOUSE={idm} ID_INPUT_KEYBOARD={idk} "
-                    f"tag uaccess={_('yes') if uacc else _('no')}")
+                    "tag uaccess=" + (_("yes") if uacc else _("no")))
     add("")
 
     # ------------------------------------------------------------ exclusividade
@@ -335,23 +336,23 @@ def build_report(listen_seconds=5, progress=None, selected_path=None):
     busy_culprits = {}
     for m in mice:
         if not m.readable:
-            add(f"  {m.path} {m.name}: {_('not tested (no permission)')}")
+            add(f"  {m.path} {m.name}: " + _("not tested (no permission)"))
             continue
         state, err = probe_grab(m.path)
         text = {
             "free": _("free"),
             "busy": _("BUSY — another program has exclusive access; events do not reach this app"),
             "unsupported": _("not supported"),
-        }.get(state, f"{_('error')} {os.strerror(err) if err else ''}")
+        }.get(state, _("error") + f" {os.strerror(err) if err else ''}")
         add(f"  {m.path} {m.name}: {text}")
         if state == "busy":
             busy.append(m)
             culprits = likely_grabbers(m.path, fds)
             busy_culprits[m.path] = culprits
             for c in culprits:
-                add(f"           {_('likely responsible')}: {c['comm']} (pid {c['pid']}) — {c['cmdline'][:160]}")
+                add("           " + _("likely responsible") + f": {c['comm']} (pid {c['pid']}) — {c['cmdline'][:160]}")
             for v in virtual_counterparts(m, mice):
-                add(f"           {_('virtual device that receives the events')}: {v.path} {v.name}")
+                add("           " + _("virtual device that receives the events") + f": {v.path} {v.name}")
     if not mice:
         add("  " + _("no mouse found"))
     add("")
@@ -397,14 +398,14 @@ def build_report(listen_seconds=5, progress=None, selected_path=None):
             r = results.get(path, {})
             mark = "  <== " + _("selected") if path == selected_path else ""
             if "open_error" in r:
-                add(f"  {path} {names[path]}: {_('could not open')}: {r['open_error']}{mark}")
+                add(f"  {path} {names[path]}: " + _("could not open") + f": {r['open_error']}{mark}")
                 continue
-            rate = f"{r['rate']:.0f} Hz ({_('nominal')} {r['nominal']})" if r["rate"] else "-"
+            rate = f"{r['rate']:.0f} Hz (" + _("nominal") + f" {r['nominal']})" if r["rate"] else "-"
             add(f"  {path} {names[path]}{mark}")
-            add(f"           {_('raw events')}: {r['raw']} (REL {r['rel']}, KEY {r['key']}) | "
-                f"{_('motion reports')}: {r['motion']} | {_('clicks')}: {r['clicks']} | "
-                f"{_('rate')}: {rate} | SYN_DROPPED: {r['dropped']}"
-                + (f" | {_('error')}: {r['error']}" if r["error"] else ""))
+            add("           " + _("raw events") + f": {r['raw']} (REL {r['rel']}, KEY {r['key']}) | "
+                + _("motion reports") + f": {r['motion']} | " + _("clicks") + f": {r['clicks']} | "
+                + _("rate") + f": {rate} | SYN_DROPPED: {r['dropped']}"
+                + (" | " + _("error") + f": {r['error']}" if r["error"] else ""))
     else:
         add("  " + _("nothing to listen to (no readable mouse)"))
     add("")
@@ -465,7 +466,7 @@ def run_cli(listen_seconds=5):
           file=sys.stderr)
 
     def progress(remaining):
-        print(f"\r  {_('Move the mouse now')}… {remaining:2d} s ", end="", file=sys.stderr, flush=True)
+        print("\r  " + _("Move the mouse now") + f"… {remaining:2d} s ", end="", file=sys.stderr, flush=True)
 
     report = build_report(listen_seconds, progress)
     print("\r" + " " * 40 + "\r", end="", file=sys.stderr)

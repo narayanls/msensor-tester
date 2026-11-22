@@ -7,6 +7,7 @@ arch=('any')
 url="https://github.com/narayanls/msensor-tester"
 license=('GPL-3.0-or-later')
 depends=('python' 'python-gobject' 'gtk4' 'libadwaita' 'python-numpy' 'python-matplotlib' 'systemd')
+makedepends=('gettext')
 install=msensor-tester.install
 source=()
 sha256sums=()
@@ -16,13 +17,21 @@ sha256sums=()
 package() {
   local src="$startdir/../usr"
 
-  # Copia tudo, ignorando caches de bytecode gerados em desenvolvimento
-  (cd "$src" && find . -type f ! -path '*/__pycache__/*' ! -name '*.pyc') |
+  # Copia tudo, ignorando caches de bytecode e traduções compiladas em desenvolvimento
+  (cd "$src" && find . -type f ! -path '*/__pycache__/*' ! -name '*.pyc' ! -name '*.mo') |
   while IFS= read -r file; do
     install -Dm644 "$src/$file" "$pkgdir/usr/$file"
   done
 
   chmod 755 "$pkgdir/usr/bin/msensor-tester"
+
+  # Compila as traduções (po/*.po → /usr/share/locale/<idioma>/LC_MESSAGES/*.mo)
+  local po lang
+  for po in "$startdir"/../po/*.po; do
+    lang=$(basename "$po" .po)
+    install -dm755 "$pkgdir/usr/share/locale/$lang/LC_MESSAGES"
+    msgfmt --check -o "$pkgdir/usr/share/locale/$lang/LC_MESSAGES/$pkgname.mo" "$po"
+  done
 
   # Pré-compila o bytecode com os caminhos finais
   python -m compileall -q -d /usr/share/msensor-tester "$pkgdir/usr/share/msensor-tester"

@@ -1,0 +1,1094 @@
+# Portuguese (Brazil) translation for MSensor Tester.
+# This file is distributed under the same license as the msensor-tester package.
+msgid ""
+msgstr ""
+"Project-Id-Version: msensor-tester 1.1.1\n"
+"Report-Msgid-Bugs-To: https://github.com/narayanls/msensor-tester/issues\n"
+"POT-Creation-Date: 2026-11-21 21:07-0300\n"
+"PO-Revision-Date: 2026-11-21 21:10-0300\n"
+"Last-Translator: narayanls\n"
+"Language-Team: Portuguese (Brazil)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: usr/share/msensor-tester/core/diagnostics.py:276
+msgid "diagnostic report"
+msgstr "relatório de diagnóstico"
+
+#: usr/share/msensor-tester/core/diagnostics.py:281
+msgid "System"
+msgstr "Sistema"
+
+#: usr/share/msensor-tester/core/diagnostics.py:284
+msgid "Distribution"
+msgstr "Distribuição"
+
+#: usr/share/msensor-tester/core/diagnostics.py:286
+msgid "Session"
+msgstr "Sessão"
+
+#: usr/share/msensor-tester/core/diagnostics.py:289
+msgid "User"
+msgstr "Usuário"
+
+#: usr/share/msensor-tester/core/diagnostics.py:290
+msgid "groups"
+msgstr "grupos"
+
+#: usr/share/msensor-tester/core/diagnostics.py:291
+msgid "udev rule installed"
+msgstr "regra udev instalada"
+
+#: usr/share/msensor-tester/core/diagnostics.py:291
+#: usr/share/msensor-tester/core/diagnostics.py:329
+msgid "yes"
+msgstr "sim"
+
+#: usr/share/msensor-tester/core/diagnostics.py:291
+msgid "NO"
+msgstr "NÃO"
+
+#: usr/share/msensor-tester/core/diagnostics.py:298
+msgid "Input devices"
+msgstr "Dispositivos de entrada"
+
+#: usr/share/msensor-tester/core/diagnostics.py:302
+msgid "MOUSE"
+msgstr "MOUSE"
+
+#: usr/share/msensor-tester/core/diagnostics.py:304
+msgid "keyboard"
+msgstr "teclado"
+
+#: usr/share/msensor-tester/core/diagnostics.py:306
+msgid "absolute (touchpad/tablet)"
+msgstr "absoluto (touchpad/mesa digitalizadora)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:307
+msgid "other"
+msgstr "outro"
+
+#: usr/share/msensor-tester/core/diagnostics.py:309
+msgid "type"
+msgstr "tipo"
+
+#: usr/share/msensor-tester/core/diagnostics.py:317
+#, python-brace-format
+msgid "{n} keys/buttons"
+msgstr "{n} teclas/botões"
+
+#: usr/share/msensor-tester/core/diagnostics.py:318
+msgid "capabilities"
+msgstr "recursos"
+
+#: usr/share/msensor-tester/core/diagnostics.py:319
+msgid "readable"
+msgstr "legível"
+
+#: usr/share/msensor-tester/core/diagnostics.py:319
+msgid "NOT readable"
+msgstr "NÃO legível"
+
+#: usr/share/msensor-tester/core/diagnostics.py:320
+msgid "permission"
+msgstr "permissão"
+
+#: usr/share/msensor-tester/core/diagnostics.py:323
+msgid "database not available"
+msgstr "banco de dados indisponível"
+
+#: usr/share/msensor-tester/core/diagnostics.py:329
+msgid "no"
+msgstr "não"
+
+#: usr/share/msensor-tester/core/diagnostics.py:333
+msgid "Exclusive access (EVIOCGRAB) by other programs"
+msgstr "Acesso exclusivo (EVIOCGRAB) por outros programas"
+
+#: usr/share/msensor-tester/core/diagnostics.py:339
+msgid "not tested (no permission)"
+msgstr "não testado (sem permissão)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:343
+msgid "free"
+msgstr "livre"
+
+#: usr/share/msensor-tester/core/diagnostics.py:344
+msgid ""
+"BUSY — another program has exclusive access; events do not reach this app"
+msgstr ""
+"OCUPADO — outro programa tem acesso exclusivo; os eventos não chegam a este "
+"app"
+
+#: usr/share/msensor-tester/core/diagnostics.py:345
+msgid "not supported"
+msgstr "não suportado"
+
+#: usr/share/msensor-tester/core/diagnostics.py:346
+#: usr/share/msensor-tester/core/diagnostics.py:408
+msgid "error"
+msgstr "erro"
+
+#: usr/share/msensor-tester/core/diagnostics.py:353
+msgid "likely responsible"
+msgstr "provável responsável"
+
+#: usr/share/msensor-tester/core/diagnostics.py:355
+msgid "virtual device that receives the events"
+msgstr "dispositivo virtual que recebe os eventos"
+
+#: usr/share/msensor-tester/core/diagnostics.py:357
+msgid "no mouse found"
+msgstr "nenhum mouse encontrado"
+
+#: usr/share/msensor-tester/core/diagnostics.py:361
+msgid "Known input-grabbing programs running"
+msgstr "Programas conhecidos por capturar a entrada em execução"
+
+#: usr/share/msensor-tester/core/diagnostics.py:366
+msgid "none found"
+msgstr "nenhum encontrado"
+
+#: usr/share/msensor-tester/core/diagnostics.py:369
+msgid "Processes with input devices open (visible to this user)"
+msgstr ""
+"Processos com dispositivos de entrada abertos (visíveis para este usuário)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:378
+#: usr/share/msensor-tester/core/diagnostics.py:387
+msgid "none visible"
+msgstr "nenhum visível"
+
+#: usr/share/msensor-tester/core/diagnostics.py:380
+#, python-brace-format
+msgid ""
+"({n} processes of other users/root are not visible; run with sudo to see "
+"them)"
+msgstr ""
+"({n} processos de outros usuários/root não são visíveis; rode com sudo para "
+"vê-los)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:381
+msgid "Processes that create virtual input devices (uinput)"
+msgstr "Processos que criam dispositivos de entrada virtuais (uinput)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:393
+#, python-brace-format
+msgid "Listening test ({s} s) — move the mouse and click"
+msgstr "Teste de escuta ({s} s) — mova o mouse e clique"
+
+#: usr/share/msensor-tester/core/diagnostics.py:399
+msgid "selected"
+msgstr "selecionado"
+
+#: usr/share/msensor-tester/core/diagnostics.py:401
+msgid "could not open"
+msgstr "não foi possível abrir"
+
+#: usr/share/msensor-tester/core/diagnostics.py:403
+msgid "nominal"
+msgstr "nominal"
+
+#: usr/share/msensor-tester/core/diagnostics.py:405
+msgid "raw events"
+msgstr "eventos brutos"
+
+#: usr/share/msensor-tester/core/diagnostics.py:406
+msgid "motion reports"
+msgstr "relatórios de movimento"
+
+#: usr/share/msensor-tester/core/diagnostics.py:406
+msgid "clicks"
+msgstr "cliques"
+
+#: usr/share/msensor-tester/core/diagnostics.py:407
+msgid "rate"
+msgstr "taxa"
+
+#: usr/share/msensor-tester/core/diagnostics.py:410
+msgid "nothing to listen to (no readable mouse)"
+msgstr "nada para escutar (nenhum mouse legível)"
+
+#: usr/share/msensor-tester/core/diagnostics.py:414
+msgid "Conclusions"
+msgstr "Conclusões"
+
+#: usr/share/msensor-tester/core/diagnostics.py:417
+msgid "No mouse (REL_X + REL_Y + BTN_LEFT) was found in /sys/class/input."
+msgstr ""
+"Nenhum mouse (REL_X + REL_Y + BTN_LEFT) foi encontrado em /sys/class/input."
+
+#: usr/share/msensor-tester/core/diagnostics.py:421
+msgid "Some mice are not readable and the udev rule is not installed."
+msgstr "Alguns mouses não são legíveis e a regra udev não está instalada."
+
+#: usr/share/msensor-tester/core/diagnostics.py:423
+msgid ""
+"Some mice are not readable even with the udev rule installed: reconnect the "
+"mouse or run 'sudo udevadm trigger --subsystem-match=input --action=change'. "
+"The rule only works for the user logged in locally."
+msgstr ""
+"Alguns mouses não são legíveis mesmo com a regra udev instalada: reconecte o "
+"mouse ou execute 'sudo udevadm trigger --subsystem-match=input --"
+"action=change'. A regra só vale para o usuário logado localmente."
+
+#: usr/share/msensor-tester/core/diagnostics.py:427
+#, python-brace-format
+msgid ""
+"These mice are grabbed by another program: {names}. While that happens, the "
+"kernel delivers the events only to that program."
+msgstr ""
+"Estes mouses estão capturados por outro programa: {names}. Enquanto isso "
+"acontece, o kernel entrega os eventos só para esse programa."
+
+#: usr/share/msensor-tester/core/diagnostics.py:433
+#: usr/share/msensor-tester/core/diagnostics.py:436
+#, python-brace-format
+msgid "Likely culprit: {who}."
+msgstr "Provável responsável: {who}."
+
+#: usr/share/msensor-tester/core/diagnostics.py:434
+#, python-brace-format
+msgid "To stop it: kill {pids}"
+msgstr "Para encerrá-lo: kill {pids}"
+
+#: usr/share/msensor-tester/core/diagnostics.py:437
+msgid ""
+"Close it during the test, or select the virtual device it creates (the "
+"polling rate will then be that of the virtual device)."
+msgstr ""
+"Feche-o durante o teste ou selecione o dispositivo virtual que ele cria (o "
+"polling rate medido será o do dispositivo virtual)."
+
+#: usr/share/msensor-tester/core/diagnostics.py:443
+msgid ""
+"No movement was received from any mouse during the listening test. If you "
+"moved the mouse, it is probably grabbed by another program."
+msgstr ""
+"Nenhum movimento chegou de nenhum mouse durante o teste de escuta. Se você "
+"moveu o mouse, ele provavelmente está capturado por outro programa."
+
+#: usr/share/msensor-tester/core/diagnostics.py:446
+#, python-brace-format
+msgid ""
+"The selected device received nothing, but {other} did: select it in the list "
+"(or use the Detect button)."
+msgstr ""
+"O dispositivo selecionado não recebeu nada, mas {other} recebeu: selecione-o "
+"na lista (ou use o botão Detectar)."
+
+#: usr/share/msensor-tester/core/diagnostics.py:449
+msgid "No problem detected."
+msgstr "Nenhum problema detectado."
+
+#: usr/share/msensor-tester/core/diagnostics.py:465
+msgid ""
+"Collecting information… during the listening test, move the mouse and click."
+msgstr ""
+"Coletando informações… durante o teste de escuta, mova o mouse e clique."
+
+#: usr/share/msensor-tester/core/diagnostics.py:469
+msgid "Move the mouse now"
+msgstr "Mova o mouse agora"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:21
+#: usr/share/msensor-tester/ui/dialogs.py:121
+#: usr/share/msensor-tester/ui/window.py:319
+msgid "Diagnostics"
+msgstr "Diagnóstico"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:28
+msgid "Run again"
+msgstr "Executar de novo"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:33
+msgid "Copy"
+msgstr "Copiar"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:62
+msgid "Collecting information…"
+msgstr "Coletando informações…"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:76
+msgid "The diagnostic failed"
+msgstr "O diagnóstico falhou"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:84
+#, python-brace-format
+msgid "Move the mouse and click now… {s} s"
+msgstr "Mova o mouse e clique agora… {s} s"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:87
+msgid "Analyzing…"
+msgstr "Analisando…"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:97
+#, python-brace-format
+msgid "Done. Debug log: {path}"
+msgstr "Pronto. Log de debug: {path}"
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:99
+msgid "Done. Copy the report and send it along with your question."
+msgstr "Pronto. Copie o relatório e envie junto com a sua dúvida."
+
+#: usr/share/msensor-tester/ui/diagnostics_window.py:107
+msgid "Report copied"
+msgstr "Relatório copiado"
+
+#: usr/share/msensor-tester/ui/dialogs.py:59
+msgid ""
+"Reading the raw sensor data requires access to /dev/input. The package "
+"installs a udev rule that grants this access only to mice, and only to the "
+"user logged in at the computer (keyboards are not included)."
+msgstr ""
+"Ler os dados brutos do sensor exige acesso a /dev/input. O pacote instala "
+"uma regra udev que libera esse acesso só para mouses, e só para o usuário "
+"logado no computador (teclados não são incluídos)."
+
+#: usr/share/msensor-tester/ui/dialogs.py:65
+msgid ""
+"The rule is installed but has not been applied to the connected mice yet. "
+"Unplug and reconnect the mouse, or run:"
+msgstr ""
+"A regra está instalada, mas ainda não foi aplicada aos mouses conectados. "
+"Desconecte e reconecte o mouse, ou execute:"
+
+#: usr/share/msensor-tester/ui/dialogs.py:70
+msgid "The rule was not found. Install it with:"
+msgstr "A regra não foi encontrada. Instale-a com:"
+
+#: usr/share/msensor-tester/ui/dialogs.py:77
+msgid "Permission needed"
+msgstr "Permissão necessária"
+
+#: usr/share/msensor-tester/ui/dialogs.py:79
+msgid "Then press the refresh button next to the mouse list."
+msgstr "Depois, clique no botão de atualizar ao lado da lista de mouses."
+
+#: usr/share/msensor-tester/ui/dialogs.py:81
+#: usr/share/msensor-tester/ui/dialogs.py:125
+msgid "OK"
+msgstr "OK"
+
+#: usr/share/msensor-tester/ui/dialogs.py:91
+#, python-brace-format
+msgid ""
+"The kernel is delivering the events of “{name}” only to another program "
+"(exclusive access), so MSensor Tester receives nothing."
+msgstr ""
+"O kernel está entregando os eventos de “{name}” só para outro programa "
+"(acesso exclusivo), então o MSensor Tester não recebe nada."
+
+#: usr/share/msensor-tester/ui/dialogs.py:99
+msgid "Process holding the mouse:"
+msgstr "Processo que está segurando o mouse:"
+
+#: usr/share/msensor-tester/ui/dialogs.py:101
+#, python-brace-format
+msgid ""
+"To measure the real mouse, close that program (for example: kill {pids}) and "
+"press the refresh button."
+msgstr ""
+"Para medir o mouse de verdade, feche esse programa (por exemplo: kill "
+"{pids}) e clique no botão de atualizar."
+
+#: usr/share/msensor-tester/ui/dialogs.py:107
+#, python-brace-format
+msgid "Running program that usually does this: {who}."
+msgstr "Programa em execução que costuma fazer isso: {who}."
+
+#: usr/share/msensor-tester/ui/dialogs.py:109
+msgid ""
+"To measure the real mouse, close that program and press the refresh button."
+msgstr ""
+"Para medir o mouse de verdade, feche esse programa e clique no botão de "
+"atualizar."
+
+#: usr/share/msensor-tester/ui/dialogs.py:115
+#, python-brace-format
+msgid ""
+"You can also test the virtual device “{name}”, which receives the events. "
+"The CPI and tracking stay valid, but the polling rate will be the rate at "
+"which that program forwards the events, not the mouse's."
+msgstr ""
+"Você também pode testar o dispositivo virtual “{name}”, que recebe os "
+"eventos. O CPI e o rastreio continuam válidos, mas o polling rate será a "
+"taxa com que esse programa repassa os eventos, não a do mouse."
+
+#: usr/share/msensor-tester/ui/dialogs.py:120
+msgid "Mouse in exclusive use"
+msgstr "Mouse em uso exclusivo"
+
+#: usr/share/msensor-tester/ui/dialogs.py:123
+msgid "Use virtual device"
+msgstr "Usar dispositivo virtual"
+
+#: usr/share/msensor-tester/ui/dialogs.py:133
+msgid "Virtual device selected. Start the test again."
+msgstr "Dispositivo virtual selecionado. Inicie o teste de novo."
+
+#: usr/share/msensor-tester/ui/dialogs.py:146
+#: usr/share/msensor-tester/ui/window.py:63
+msgid "Preferences"
+msgstr "Preferências"
+
+#: usr/share/msensor-tester/ui/dialogs.py:150
+msgid "Tests"
+msgstr "Testes"
+
+#: usr/share/msensor-tester/ui/dialogs.py:152
+msgid "Lock the cursor during tests"
+msgstr "Travar o cursor durante os testes"
+
+#: usr/share/msensor-tester/ui/dialogs.py:154
+msgid ""
+"Optional. Fails if another program has exclusive access to the mouse (input-"
+"remapper, keyd, kanata…). The measurement is the same with or without it."
+msgstr ""
+"Opcional. Falha se outro programa tiver acesso exclusivo ao mouse (input-"
+"remapper, keyd, kanata…). A medição é a mesma com ou sem a trava."
+
+#: usr/share/msensor-tester/ui/dialogs.py:163
+msgid "CPI measurement distance (cm)"
+msgstr "Distância para medir o CPI (cm)"
+
+#: usr/share/msensor-tester/ui/dialogs.py:164
+msgid "How far you move the mouse in “Measure CPI”"
+msgstr "Quanto você move o mouse em “Medir CPI”"
+
+#: usr/share/msensor-tester/ui/dialogs.py:173
+msgid "Language"
+msgstr "Idioma"
+
+#: usr/share/msensor-tester/ui/dialogs.py:175
+msgid "Automatic (system)"
+msgstr "Automático (sistema)"
+
+#: usr/share/msensor-tester/ui/dialogs.py:176
+msgid "Interface language"
+msgstr "Idioma da interface"
+
+#: usr/share/msensor-tester/ui/dialogs.py:177
+msgid "Takes effect after restarting the app"
+msgstr "Vale após reiniciar o aplicativo"
+
+#: usr/share/msensor-tester/ui/dialogs.py:201
+msgid ""
+"Mouse sensor tracking and polling rate tester for Linux. Reads the raw "
+"sensor data directly from evdev, with microsecond kernel timestamps."
+msgstr ""
+"Teste de rastreio do sensor e de polling rate de mouses para Linux. Lê os "
+"dados brutos do sensor direto do evdev, com tempos do kernel em "
+"microssegundos."
+
+#: usr/share/msensor-tester/ui/dialogs.py:209
+msgid "Inspired by"
+msgstr "Inspirado em"
+
+#: usr/share/msensor-tester/ui/live_graph.py:169
+msgid "Move the mouse to start"
+msgstr "Mova o mouse para começar"
+
+#: usr/share/msensor-tester/ui/live_graph.py:235
+msgid "No data yet"
+msgstr "Sem dados ainda"
+
+#: usr/share/msensor-tester/ui/plot_window.py:32
+msgid "xCount vs. Time"
+msgstr "Contagem X × Tempo"
+
+#: usr/share/msensor-tester/ui/plot_window.py:33
+msgid "yCount vs. Time"
+msgstr "Contagem Y × Tempo"
+
+#: usr/share/msensor-tester/ui/plot_window.py:34
+msgid "xyCount vs. Time"
+msgstr "Contagem XY × Tempo"
+
+#: usr/share/msensor-tester/ui/plot_window.py:35
+msgid "X vs. Y"
+msgstr "X × Y (trajetória)"
+
+#: usr/share/msensor-tester/ui/plot_window.py:43
+#, python-brace-format
+msgid "Plots need matplotlib: {error}"
+msgstr "Os gráficos precisam do matplotlib: {error}"
+
+#: usr/share/msensor-tester/ui/plot_window.py:66
+msgid "Plots"
+msgstr "Gráficos"
+
+#: usr/share/msensor-tester/ui/plot_window.py:98
+msgid "From event"
+msgstr "Do evento"
+
+#: usr/share/msensor-tester/ui/plot_window.py:103
+msgid "to"
+msgstr "até"
+
+#: usr/share/msensor-tester/ui/plot_window.py:111
+msgid "Lines"
+msgstr "Linhas"
+
+#: usr/share/msensor-tester/ui/plot_window.py:112
+msgid "Stems"
+msgstr "Hastes"
+
+#: usr/share/msensor-tester/ui/plot_window.py:113
+msgid "Smoothed (8 ms)"
+msgstr "Suavizado (8 ms)"
+
+#: usr/share/msensor-tester/ui/plot_window.py:211
+msgid "Time (ms)"
+msgstr "Tempo (ms)"
+
+#: usr/share/msensor-tester/ui/plot_window.py:216
+#: usr/share/msensor-tester/ui/plot_window.py:234
+msgid "xCounts"
+msgstr "Contagens X"
+
+#: usr/share/msensor-tester/ui/plot_window.py:220
+#: usr/share/msensor-tester/ui/plot_window.py:235
+msgid "yCounts"
+msgstr "Contagens Y"
+
+#: usr/share/msensor-tester/ui/plot_window.py:225
+msgid "Counts"
+msgstr "Contagens"
+
+#: usr/share/msensor-tester/ui/polling_page.py:54
+#: usr/share/msensor-tester/ui/polling_page.py:235
+#: usr/share/msensor-tester/ui/polling_page.py:255
+msgid "CURRENT"
+msgstr "ATUAL"
+
+#: usr/share/msensor-tester/ui/polling_page.py:73
+msgid "Average"
+msgstr "Média"
+
+#: usr/share/msensor-tester/ui/polling_page.py:74
+msgid "Peak"
+msgstr "Pico"
+
+#: usr/share/msensor-tester/ui/polling_page.py:75
+msgid "Reports"
+msgstr "Relatórios"
+
+#: usr/share/msensor-tester/ui/polling_page.py:76
+msgid "Time left"
+msgstr "Tempo restante"
+
+#: usr/share/msensor-tester/ui/polling_page.py:81
+#: usr/share/msensor-tester/ui/sensor_page.py:115
+msgid "Duration"
+msgstr "Duração"
+
+#: usr/share/msensor-tester/ui/polling_page.py:105
+msgid "Polling rate over time"
+msgstr "Polling rate ao longo do tempo"
+
+#: usr/share/msensor-tester/ui/polling_page.py:107
+msgid "Interval between reports"
+msgstr "Intervalo entre relatórios"
+
+#: usr/share/msensor-tester/ui/polling_page.py:111
+msgid "Detailed result"
+msgstr "Resultado detalhado"
+
+#: usr/share/msensor-tester/ui/polling_page.py:112
+msgid "Pauses in movement are excluded from the calculations."
+msgstr "As pausas no movimento são descartadas dos cálculos."
+
+#: usr/share/msensor-tester/ui/polling_page.py:116
+msgid "Detected rate"
+msgstr "Taxa detectada"
+
+#: usr/share/msensor-tester/ui/polling_page.py:116
+msgid "Nearest standard rate"
+msgstr "Taxa padrão mais próxima"
+
+#: usr/share/msensor-tester/ui/polling_page.py:117
+msgid "Average rate"
+msgstr "Taxa média"
+
+#: usr/share/msensor-tester/ui/polling_page.py:117
+msgid "Reports per second while moving"
+msgstr "Relatórios por segundo durante o movimento"
+
+#: usr/share/msensor-tester/ui/polling_page.py:118
+msgid "Peak / lowest"
+msgstr "Pico / mínima"
+
+#: usr/share/msensor-tester/ui/polling_page.py:118
+msgid "Best and worst 100 ms windows"
+msgstr "Melhor e pior janela de 100 ms"
+
+#: usr/share/msensor-tester/ui/polling_page.py:119
+msgid "Mean / median interval"
+msgstr "Intervalo médio / mediano"
+
+#: usr/share/msensor-tester/ui/polling_page.py:120
+msgid "Shortest / longest interval"
+msgstr "Menor / maior intervalo"
+
+#: usr/share/msensor-tester/ui/polling_page.py:121
+msgid "Jitter (standard deviation)"
+msgstr "Jitter (desvio padrão)"
+
+#: usr/share/msensor-tester/ui/polling_page.py:121
+msgid "Lower is more stable"
+msgstr "Quanto menor, mais estável"
+
+#: usr/share/msensor-tester/ui/polling_page.py:122
+msgid "Percentiles 1% / 99%"
+msgstr "Percentis 1% / 99%"
+
+#: usr/share/msensor-tester/ui/polling_page.py:123
+msgid "Intervals within ±25%"
+msgstr "Intervalos dentro de ±25%"
+
+#: usr/share/msensor-tester/ui/polling_page.py:123
+msgid "Share of intervals close to the nominal value"
+msgstr "Parcela dos intervalos próximos ao valor nominal"
+
+#: usr/share/msensor-tester/ui/polling_page.py:124
+msgid "Reports / active time"
+msgstr "Relatórios / tempo ativo"
+
+#: usr/share/msensor-tester/ui/polling_page.py:125
+msgid "Pauses"
+msgstr "Pausas"
+
+#: usr/share/msensor-tester/ui/polling_page.py:125
+msgid "Times the movement stopped during the test"
+msgstr "Vezes que o movimento parou durante o teste"
+
+#: usr/share/msensor-tester/ui/polling_page.py:126
+msgid "Kernel buffer overflows"
+msgstr "Estouros do buffer do kernel"
+
+#: usr/share/msensor-tester/ui/polling_page.py:126
+msgid "Should be zero"
+msgstr "Deve ser zero"
+
+#: usr/share/msensor-tester/ui/polling_page.py:173
+msgid "Cancel (Esc)"
+msgstr "Cancelar (Esc)"
+
+#: usr/share/msensor-tester/ui/polling_page.py:179
+msgid "Start test (F1)"
+msgstr "Iniciar teste (F1)"
+
+#: usr/share/msensor-tester/ui/polling_page.py:189
+msgid ""
+"Click “Start test” and move the mouse quickly in all directions (circles "
+"work well). The timer starts with the first movement."
+msgstr ""
+"Clique em “Iniciar teste” e mova o mouse rápido em todas as direções "
+"(círculos funcionam bem). A contagem começa no primeiro movimento."
+
+#: usr/share/msensor-tester/ui/polling_page.py:241
+msgid "Move the mouse to start…"
+msgstr "Mova o mouse para começar…"
+
+#: usr/share/msensor-tester/ui/polling_page.py:243
+msgid "The cursor is locked; press Esc to cancel."
+msgstr "O cursor está travado; pressione Esc para cancelar."
+
+#: usr/share/msensor-tester/ui/polling_page.py:245
+msgid "The cursor moves normally; this does not affect the measurement."
+msgstr "O cursor se move normalmente; isso não afeta a medição."
+
+#: usr/share/msensor-tester/ui/polling_page.py:258
+msgid "Test cancelled."
+msgstr "Teste cancelado."
+
+#: usr/share/msensor-tester/ui/polling_page.py:287
+msgid "The mouse was disconnected."
+msgstr "O mouse foi desconectado."
+
+#: usr/share/msensor-tester/ui/polling_page.py:299
+#: usr/share/msensor-tester/ui/sensor_page.py:336
+msgid "No event has arrived from this device yet. Use Menu → Diagnostics."
+msgstr "Nenhum evento chegou deste dispositivo ainda. Use Menu → Diagnóstico."
+
+#: usr/share/msensor-tester/ui/polling_page.py:305
+msgid "Keep moving the mouse!"
+msgstr "Continue movendo o mouse!"
+
+#: usr/share/msensor-tester/ui/polling_page.py:306
+#: usr/share/msensor-tester/ui/sensor_page.py:252
+#: usr/share/msensor-tester/ui/sensor_page.py:266
+msgid "Esc cancels."
+msgstr "Esc cancela."
+
+#: usr/share/msensor-tester/ui/polling_page.py:311
+msgid "No movement detected. Test cancelled."
+msgstr "Nenhum movimento detectado. Teste cancelado."
+
+#: usr/share/msensor-tester/ui/polling_page.py:352
+msgid "Not enough data. Move the mouse continuously during the test."
+msgstr "Dados insuficientes. Mova o mouse sem parar durante o teste."
+
+#: usr/share/msensor-tester/ui/polling_page.py:358
+#: usr/share/msensor-tester/ui/polling_page.py:364
+msgid "Test finished."
+msgstr "Teste concluído."
+
+#: usr/share/msensor-tester/ui/polling_page.py:359
+msgid ""
+"Note: this is a virtual device; the rate shown is the rate at which the "
+"program that creates it forwards the events, not the mouse's."
+msgstr ""
+"Atenção: este é um dispositivo virtual; a taxa mostrada é a taxa com que o "
+"programa que o cria repassa os eventos, não a do mouse."
+
+#: usr/share/msensor-tester/ui/polling_page.py:365
+msgid "AVERAGE"
+msgstr "MÉDIA"
+
+#: usr/share/msensor-tester/ui/polling_page.py:367
+#, python-brace-format
+msgid "Detected: {rate} Hz"
+msgstr "Detectado: {rate} Hz"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:82
+#: usr/share/msensor-tester/ui/sensor_page.py:245
+#: usr/share/msensor-tester/ui/sensor_page.py:372
+msgid "Measure CPI"
+msgstr "Medir CPI"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:83
+msgid "Collect (F1)"
+msgstr "Coletar (F1)"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:85
+msgid "Plots (F3)"
+msgstr "Gráficos (F3)"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:86
+msgid "Save CSV"
+msgstr "Salvar CSV"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:87
+msgid "Open CSV"
+msgstr "Abrir CSV"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:97
+msgid "Settings"
+msgstr "Configuração"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:98
+msgid "Description"
+msgstr "Descrição"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:104
+msgid "CPI (DPI)"
+msgstr "CPI (DPI)"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:105
+msgid "Type the mouse value or use “Measure CPI”"
+msgstr "Digite o valor do mouse ou use “Medir CPI”"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:113
+msgid "Result"
+msgstr "Resultado"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:114
+msgid "Events"
+msgstr "Eventos"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:116
+msgid "Sum X"
+msgstr "Soma X"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:117
+msgid "Sum Y"
+msgstr "Soma Y"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:118
+msgid "Path"
+msgstr "Caminho"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:119
+msgid "Average report rate"
+msgstr "Taxa média de relatórios"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:152
+msgid "Ready"
+msgstr "Pronto"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:154
+msgid ""
+"Type the correct CPI, or use “Measure CPI”.\n"
+"Then use “Collect” (records while the left button is held), or open a CSV "
+"file."
+msgstr ""
+"Digite o CPI correto ou use “Medir CPI”.\n"
+"Depois use “Coletar” (grava enquanto o botão esquerdo estiver pressionado) "
+"ou abra um arquivo CSV."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:231
+#, python-brace-format
+msgid "Warning: the kernel discarded data {n} time(s) (buffer overflow)."
+msgstr "Atenção: o kernel descartou dados {n} vez(es) (estouro de buffer)."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:237
+msgid "The cursor is locked during the test."
+msgstr "O cursor fica travado durante o teste."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:247
+#, python-brace-format
+msgid ""
+"With the cursor over this area:\n"
+"1. Press and hold the left mouse button\n"
+"2. Move the mouse {dist} cm in a straight line (use a ruler)\n"
+"3. Release the left button"
+msgstr ""
+"Com o cursor sobre esta área:\n"
+"1. Pressione e segure o botão esquerdo do mouse\n"
+"2. Mova o mouse {dist} cm em linha reta (use uma régua)\n"
+"3. Solte o botão esquerdo"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:259
+msgid "Collect"
+msgstr "Coletar"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:261
+msgid ""
+"With the cursor over this area:\n"
+"1. Press and hold the left mouse button\n"
+"2. Move the mouse\n"
+"3. Release the left button"
+msgstr ""
+"Com o cursor sobre esta área:\n"
+"1. Pressione e segure o botão esquerdo do mouse\n"
+"2. Mova o mouse\n"
+"3. Solte o botão esquerdo"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:276
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:276
+msgid "The test was cancelled."
+msgstr "O teste foi cancelado."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:279
+#: usr/share/msensor-tester/ui/sensor_page.py:398
+msgid "counts"
+msgstr "contagens"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:285
+#, python-brace-format
+msgid "≈ {cm} cm at the current CPI"
+msgstr "≈ {cm} cm com o CPI atual"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:290
+#, python-brace-format
+msgid "Events: {n}"
+msgstr "Eventos: {n}"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:310
+msgid "Measuring…"
+msgstr "Medindo…"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:321
+msgid "Collecting…"
+msgstr "Coletando…"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:343
+msgid "Mouse disconnected"
+msgstr "Mouse desconectado"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:343
+msgid "The device stopped responding."
+msgstr "O dispositivo parou de responder."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:349
+msgid "Recording time limit reached."
+msgstr "Tempo máximo de gravação atingido."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:364
+#, python-brace-format
+msgid "Measured CPI: {cpi}"
+msgstr "CPI medido: {cpi}"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:365
+#, python-brace-format
+msgid "{counts} counts over {dist} cm."
+msgstr "{counts} contagens em {dist} cm."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:369
+msgid "Now use “Collect”."
+msgstr "Agora use “Coletar”."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:372
+msgid "No movement was recorded. Try again."
+msgstr "Nenhum movimento foi gravado. Tente de novo."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:383
+msgid "No data"
+msgstr "Sem dados"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:383
+msgid "No movement was recorded."
+msgstr "Nenhum movimento foi gravado."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:386
+msgid "Done"
+msgstr "Concluído"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:387
+msgid "Press “Plots” (F3) to view the data or “Save CSV” to keep the log."
+msgstr ""
+"Clique em “Gráficos” (F3) para ver os dados ou em “Salvar CSV” para guardar "
+"o log."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:410
+#, python-brace-format
+msgid "{avg} (nominal {nominal} Hz)"
+msgstr "{avg} (nominal {nominal} Hz)"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:420
+msgid "No data to plot yet."
+msgstr "Ainda não há dados para os gráficos."
+
+#: usr/share/msensor-tester/ui/sensor_page.py:430
+msgid "CSV files"
+msgstr "Arquivos CSV"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:434
+msgid "All files"
+msgstr "Todos os arquivos"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:448
+msgid "Save log"
+msgstr "Salvar log"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:466
+#, python-brace-format
+msgid "Could not save: {error}"
+msgstr "Não foi possível salvar: {error}"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:469
+#, python-brace-format
+msgid "Saved {name}"
+msgstr "{name} salvo"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:472
+msgid "Open log"
+msgstr "Abrir log"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:488
+#, python-brace-format
+msgid "Could not open the file: {error}"
+msgstr "Não foi possível abrir o arquivo: {error}"
+
+#: usr/share/msensor-tester/ui/sensor_page.py:500
+msgid "File loaded"
+msgstr "Arquivo carregado"
+
+#: usr/share/msensor-tester/ui/window.py:45
+msgid "Mouse to test"
+msgstr "Mouse a testar"
+
+#: usr/share/msensor-tester/ui/window.py:52
+msgid "Detect: move the mouse you want to test"
+msgstr "Detectar: mova o mouse que deseja testar"
+
+#: usr/share/msensor-tester/ui/window.py:57
+msgid "Refresh the list of mice"
+msgstr "Atualizar a lista de mouses"
+
+#: usr/share/msensor-tester/ui/window.py:64
+msgid "Diagnostics…"
+msgstr "Diagnóstico…"
+
+#: usr/share/msensor-tester/ui/window.py:65
+msgid "About MSensor Tester"
+msgstr "Sobre o MSensor Tester"
+
+#: usr/share/msensor-tester/ui/window.py:67
+msgid "Main menu"
+msgstr "Menu principal"
+
+#: usr/share/msensor-tester/ui/window.py:72
+msgid "No permission to read the mice"
+msgstr "Sem permissão para ler os mouses"
+
+#: usr/share/msensor-tester/ui/window.py:73
+msgid "How to fix"
+msgstr "Como resolver"
+
+#: usr/share/msensor-tester/ui/window.py:81
+msgid "Sensor"
+msgstr "Sensor"
+
+#: usr/share/msensor-tester/ui/window.py:84
+msgid "Polling rate"
+msgstr "Polling rate"
+
+#: usr/share/msensor-tester/ui/window.py:146
+msgid "no permission"
+msgstr "sem permissão"
+
+#: usr/share/msensor-tester/ui/window.py:151
+msgid "in exclusive use"
+msgstr "em uso exclusivo"
+
+#: usr/share/msensor-tester/ui/window.py:153
+msgid "virtual"
+msgstr "virtual"
+
+#: usr/share/msensor-tester/ui/window.py:174
+msgid "No mouse found"
+msgstr "Nenhum mouse encontrado"
+
+#: usr/share/msensor-tester/ui/window.py:212
+msgid "Move the mouse you want to test…"
+msgstr "Mova o mouse que deseja testar…"
+
+#: usr/share/msensor-tester/ui/window.py:226
+#, python-brace-format
+msgid "Selected: {name}"
+msgstr "Selecionado: {name}"
+
+#: usr/share/msensor-tester/ui/window.py:228
+msgid "No movement detected."
+msgstr "Nenhum movimento detectado."
+
+#: usr/share/msensor-tester/ui/window.py:247
+msgid "No mouse selected."
+msgstr "Nenhum mouse selecionado."
+
+#: usr/share/msensor-tester/ui/window.py:265
+#, python-brace-format
+msgid "Could not open the mouse: {error}"
+msgstr "Não foi possível abrir o mouse: {error}"
+
+#: usr/share/msensor-tester/ui/window.py:273
+msgid ""
+"another program already has exclusive access to it (input-remapper, keyd, "
+"kanata…)"
+msgstr ""
+"outro programa já tem acesso exclusivo a ele (input-remapper, keyd, kanata…)"
+
+#: usr/share/msensor-tester/ui/window.py:279
+#, python-brace-format
+msgid ""
+"Could not lock the cursor: {reason}. The test continues without the lock."
+msgstr ""
+"Não foi possível travar o cursor: {reason}. O teste continua sem a trava."
+
+#: usr/share/msensor-tester/ui/window.py:315
+#, python-brace-format
+msgid "Nothing received from “{name}”. Is this the mouse you are moving?"
+msgstr "Nada recebido de “{name}”. É este o mouse que você está movendo?"
+
+#: usr/share/msensor-tester/ui/window.py:358
+msgid "Test stopped because the window lost focus."
+msgstr "Teste interrompido porque a janela perdeu o foco."
