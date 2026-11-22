@@ -8,6 +8,12 @@ The **Sensor** tab follows the Windows [MouseTester](https://github.com/microe1/
 
 The interface is in English, and in Portuguese (pt-BR) on systems set to Portuguese.
 
+
+Testing e.g:
+
+
+https://github.com/user-attachments/assets/7f8cc69c-a1e7-44c1-ac63-f7493af78ade
+
 ## Installation
 
 ### Prebuilt package (Arch Linux and derivatives)
