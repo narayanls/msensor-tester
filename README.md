@@ -18,7 +18,7 @@ Funciona no Arch Linux e em derivados como CachyOS, EndeavourOS e Manjaro.
 2. Instale com o pacman, na pasta onde o arquivo foi salvo:
 
    ```sh
-   sudo pacman -U msensor-tester-1.0.0-1-any.pkg.tar.zst
+   sudo pacman -U msensor-tester-1.0.2-1-any.pkg.tar.zst
    ```
 
 O pacman instala as dependências (`python`, `python-gobject`, `gtk4`, `libadwaita`, `python-numpy` e `python-matplotlib`) e aplica a regra udev de acesso aos mouses. Depois, abra o **MSensor Tester** pelo menu de aplicativos ou rode `msensor-tester` no terminal.
