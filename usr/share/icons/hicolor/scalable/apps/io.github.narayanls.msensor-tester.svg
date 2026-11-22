@@ -1,31 +1,166 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
-  <defs>
-    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#ffffff"/>
-      <stop offset="1" stop-color="#d5d3cf"/>
-    </linearGradient>
-    <linearGradient id="side" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#9a9996"/>
-      <stop offset="1" stop-color="#5e5c64"/>
-    </linearGradient>
-    <linearGradient id="trace" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#62a0ea"/>
-      <stop offset="1" stop-color="#1c71d8"/>
-    </linearGradient>
-  </defs>
-  <!-- sombra/lateral do mouse -->
-  <rect x="34" y="12" width="60" height="106" rx="30" fill="url(#side)"/>
-  <!-- corpo -->
-  <rect x="34" y="10" width="60" height="102" rx="30" fill="url(#body)"/>
-  <!-- divisão dos botões -->
-  <path d="M64 10 V50 M34 50 H94" stroke="#c0bfbc" stroke-width="2.5" fill="none"/>
-  <!-- roda de rolagem -->
-  <rect x="59" y="22" width="10" height="20" rx="5" fill="#3d3846"/>
-  <rect x="61.5" y="25" width="5" height="6" rx="2.5" fill="#77767b"/>
-  <!-- traço do sensor / polling -->
-  <polyline points="8,86 32,86 42,68 52,104 62,58 72,98 82,76 92,86 120,86"
-            fill="none" stroke="#ffffff" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
-  <polyline points="8,86 32,86 42,68 52,104 62,58 72,98 82,76 92,86 120,86"
-            fill="none" stroke="url(#trace)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
-  <circle cx="120" cy="86" r="6" fill="#1c71d8" stroke="#ffffff" stroke-width="3"/>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="24"
+   height="24"
+   viewBox="0 0 24 24"
+   sodipodi:docname="io.github.narayanls.MouseRemapper.svg"
+   xml:space="preserve"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   inkscape:export-filename="mouse-remapper.svg"
+   inkscape:export-xdpi="960"
+   inkscape:export-ydpi="960"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs1"><linearGradient
+       x1="22.535419"
+       y1="22.6276"
+       x2="5.318624"
+       y2="5.3239861"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="scale(0.75)"
+       spreadMethod="pad"
+       id="linearGradient3"><stop
+         style="stop-opacity:1;stop-color:#0b1728"
+         offset="0"
+         id="stop1" /><stop
+         style="stop-opacity:1;stop-color:#3771c8"
+         offset="0.99705398"
+         id="stop2" /><stop
+         style="stop-opacity:1;stop-color:#0b1728"
+         offset="1"
+         id="stop3" /></linearGradient><clipPath
+       id="d0445aec38"><path
+         d="M 103 19.292969 L 181 19.292969 L 181 119 L 103 119 Z M 103 19.292969 "
+         clip-rule="nonzero"
+         id="path5-5" /></clipPath><clipPath
+       id="c7fa485f8a"><path
+         d="M 190 19.292969 L 269 19.292969 L 269 119 L 190 119 Z M 190 19.292969 "
+         clip-rule="nonzero"
+         id="path6" /></clipPath><linearGradient
+       id="trace"
+       x1="3.3191163"
+       y1="82.854912"
+       x2="81.65026"
+       y2="82.854912"
+       gradientTransform="scale(1.5064251,0.66382325)"
+       gradientUnits="userSpaceOnUse"><stop
+         offset="0"
+         stop-color="#62a0ea"
+         id="stop5" /><stop
+         offset="1"
+         stop-color="#1c71d8"
+         id="stop6" /></linearGradient></defs><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="5.7484473"
+     inkscape:cx="-32.704483"
+     inkscape:cy="3.3922203"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1"><inkscape:page
+       x="0"
+       y="0"
+       width="24"
+       height="24"
+       id="page2"
+       margin="0"
+       bleed="0" /></sodipodi:namedview><g
+     id="g1"
+     inkscape:groupmode="layer"
+     inkscape:label="1"><path
+       id="path3"
+       d="m 5.699,0.75 h 6.602 c 2.742,0 4.949,2.207 4.949,4.949 v 6.602 c 0,2.742 -2.207,4.949 -4.949,4.949 H 5.699 C 2.957,17.25 0.75,15.043 0.75,12.301 V 5.699 C 0.75,2.957 2.957,0.75 5.699,0.75 Z"
+       style="fill:url(#linearGradient3);stroke:none"
+       transform="scale(1.3333333)" /><g
+       id="g16"
+       transform="matrix(0.22418056,0,0,0.22418056,26.24893,12.145627)"
+       style="fill:#f9f9f9"><g
+         clip-path="url(#d0445aec38)"
+         id="g13"
+         transform="matrix(0.22222222,0,0,0.22222222,-104.90599,-37.597513)"
+         style="fill:#f9f9f9"><path
+           fill="#ffffff"
+           d="m 164.56641,113.09766 c 0,-10.08203 7.01953,-18.554691 16.42578,-20.78516 V 19.578125 h -9.09375 c -37.77735,0 -67.29297,30.621094 -67.29297,68.398437 l -1.10938,30.058598 h 61.07032 z m 0,0"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           id="path12"
+           style="fill:#f9f9f9" /></g><g
+         clip-path="url(#c7fa485f8a)"
+         id="g14"
+         transform="matrix(0.22222222,0,0,0.22222222,-104.90599,-37.597513)"
+         style="fill:#f9f9f9"><path
+           fill="#ffffff"
+           d="m 207.28906,113.09766 v 4.9375 h 61.64453 l -1.10547,-30.054691 c 0,-37.78125 -29.52734,-68.402344 -67.30468,-68.402344 h -10.30078 v 72.59375 c 9.72656,1.992187 17.0664,10.613285 17.0664,20.925785 z m 0,0"
+           fill-opacity="1"
+           fill-rule="nonzero"
+           id="path13"
+           style="fill:#f9f9f9" /></g><path
+         fill="#ffffff"
+         d="m -43.429428,13.299189 -1.713543,-22.7586823 h -13.698784 v 2.0998267 c 0,2.6171888 -2.12934,4.7465288 -4.747395,4.7465288 -2.617187,0 -4.746527,-2.12934 -4.746527,-4.7465288 v -2.0998267 h -13.571182 l -1.779513,22.7074663 c -0.790799,10.082465 7.179688,18.699651 17.293402,18.699651 h 5.6658 c 10.092882,0 18.054686,-8.582464 17.297742,-18.648435 z m 0,0"
+         fill-opacity="1"
+         fill-rule="nonzero"
+         id="path14"
+         style="stroke-width:0.222222;fill:#f9f9f9" /><path
+         fill="#ffffff"
+         d="m -66.08915,-12.4647 v 5.1050334 c 0,1.3949666 1.131075,2.5286466 2.528646,2.5286466 1.397569,0 2.529514,-1.13368 2.529514,-2.5286466 V -12.4647 c 0,-0.697049 -0.283854,-1.330729 -0.742187,-1.789062 -0.455731,-0.455731 -1.089411,-0.739585 -1.787327,-0.739585 -1.397571,0 -2.528646,1.131945 -2.528646,2.528647 z m 0,0"
+         fill-opacity="1"
+         fill-rule="nonzero"
+         id="path15"
+         style="stroke-width:0.222222;fill:#f9f9f9" /></g><rect
+       x="11.253358"
+       y="8.5584364"
+       width="1.3252453"
+       height="2.6504905"
+       rx="0.66262263"
+       fill="#3d3846"
+       id="rect8"
+       style="fill:#0b1728;stroke-width:0.132525" /><rect
+       x="11.58467"
+       y="8.9560099"
+       width="0.66262263"
+       height="0.79514712"
+       rx="0.33131132"
+       fill="#77767b"
+       id="rect9"
+       style="fill:#ffffff;stroke-width:0.132525" /><g
+       id="g2"
+       transform="matrix(0.68308791,0,0,0.68308791,-15.270841,7.9441528)"><polyline
+         points="8,86 32,86 42,68 52,104 62,58 72,98 82,76 92,86 120,86"
+         fill="none"
+         stroke="#ffffff"
+         stroke-width="12"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="polyline9"
+         transform="matrix(0.19402868,0,0,0.19402868,27.359528,-4.8128094)" /><polyline
+         points="8,86 32,86 42,68 52,104 62,58 72,98 82,76 92,86 120,86"
+         fill="none"
+         stroke="url(#trace)"
+         stroke-width="6"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="polyline10"
+         style="stroke:url(#trace)"
+         transform="matrix(0.19402868,0,0,0.19402868,27.359528,-4.8128094)" /><circle
+         cx="50.642971"
+         cy="11.873657"
+         r="1.1641721"
+         fill="#1c71d8"
+         stroke="#ffffff"
+         stroke-width="0.582086"
+         id="circle10" /></g></g></svg>
