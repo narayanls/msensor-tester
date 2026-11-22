@@ -1,0 +1,21 @@
+_apply_rule() {
+  # Aplica a regra udev aos mouses já conectados (o hook do systemd recarrega as
+  # regras, mas não reavalia os dispositivos que já estão plugados).
+  udevadm control --reload 2>/dev/null
+  udevadm trigger --subsystem-match=input --action=change 2>/dev/null
+}
+
+post_install() {
+  _apply_rule
+  echo ">> MSensor Tester: a regra udev que dá acesso de leitura aos mouses foi aplicada."
+  echo ">> Se o app disser que falta permissão, reconecte o mouse ou faça logout/login."
+}
+
+post_upgrade() {
+  _apply_rule
+}
+
+post_remove() {
+  udevadm control --reload 2>/dev/null
+  udevadm trigger --subsystem-match=input --action=change 2>/dev/null
+}

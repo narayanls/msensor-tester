@@ -1,0 +1,29 @@
+# Maintainer: narayanls
+pkgname=msensor-tester
+pkgver=1.0.0
+pkgrel=1
+pkgdesc="Teste de rastreio do sensor e de polling rate de mouses (inspirado no MouseTester)"
+arch=('any')
+url="https://github.com/narayanls/msensor-tester"
+license=('GPL-3.0-or-later')
+depends=('python' 'python-gobject' 'gtk4' 'libadwaita' 'python-numpy' 'python-matplotlib' 'systemd')
+install=msensor-tester.install
+source=()
+sha256sums=()
+
+# Empacota a árvore usr/ que está ao lado desta pasta (msensor-tester/usr).
+# Uso: cd pkgbuild && makepkg -si
+package() {
+  local src="$startdir/../usr"
+
+  # Copia tudo, ignorando caches de bytecode gerados em desenvolvimento
+  (cd "$src" && find . -type f ! -path '*/__pycache__/*' ! -name '*.pyc') |
+  while IFS= read -r file; do
+    install -Dm644 "$src/$file" "$pkgdir/usr/$file"
+  done
+
+  chmod 755 "$pkgdir/usr/bin/msensor-tester"
+
+  # Pré-compila o bytecode com os caminhos finais
+  python -m compileall -q -d /usr/share/msensor-tester "$pkgdir/usr/share/msensor-tester"
+}

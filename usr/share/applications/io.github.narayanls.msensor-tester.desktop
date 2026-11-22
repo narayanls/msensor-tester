@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=Application
+Name=MSensor Tester
+GenericName=Mouse Sensor Tester
+GenericName[pt_BR]=Teste de Sensor de Mouse
+Comment=Test mouse sensor tracking and polling rate
+Comment[pt_BR]=Teste o rastreio do sensor e o polling rate do mouse
+Exec=msensor-tester
+Icon=io.github.narayanls.msensor-tester
+Terminal=false
+Categories=Utility;HardwareSettings;GTK;
+Keywords=mouse;sensor;polling;rate;cpi;dpi;hz;tracking;mousetester;
+Keywords[pt_BR]=mouse;sensor;polling;taxa;cpi;dpi;hz;rastreio;teste;mousetester;
+StartupNotify=true
