@@ -8,6 +8,17 @@ A aba **Sensor** segue o [MouseTester](https://github.com/microe1/MouseTester) d
 
 Interface em português (pt-BR) e em inglês para sistemas em outros idiomas.
 
+Exemplo de testes:
+
+
+https://github.com/user-attachments/assets/7f8cc69c-a1e7-44c1-ac63-f7493af78ade
+
+
+
+
+
+
+
 ## Instalação
 
 ### Pacote pronto (Arch Linux e derivados)
