@@ -141,6 +141,13 @@ The log goes to the terminal and to `~/.cache/msensor-tester/debug.log`. Every s
 - **The F1, F3 and Esc keys** only work while the app window has focus.
 - **In the polling rate test**, prefer moving the mouse in circles in the middle of the screen: hitting a corner may open the GNOME overview (hot corner). The measurement continues, but the window goes to the background.
 
+## 🛠️ Build with
+
+- [Python 3](https://www.python.org) + [PyGObject](https://pygobject.gnome.org)
+- [GTK4](https://gtk.org) + [Adwaita (libadwaita)](https://gnome.pages.gitlab.gnome.org/libadwaita/)
+- Vibe Coding:
+  Claude Sonnet was used for generate code. MSensor Tester was revised and tested by humans.
+
 ## Credits
 
 Inspired by [MouseTester](https://github.com/microe1/MouseTester) by microe1 (MIT). MSensor Tester is an independent reimplementation for Linux; no code from the original was copied.
