@@ -146,7 +146,7 @@ The log goes to the terminal and to `~/.cache/msensor-tester/debug.log`. Every s
 - [Python 3](https://www.python.org) + [PyGObject](https://pygobject.gnome.org)
 - [GTK4](https://gtk.org) + [Adwaita (libadwaita)](https://gnome.pages.gitlab.gnome.org/libadwaita/)
 - Vibe Coding:
-  Claude Sonnet was used for generate code. MSensor Tester was revised and tested by humans.
+  Claude Opus was used for generate code. MSensor Tester was revised and tested by humans.
 
 ## Credits
 
